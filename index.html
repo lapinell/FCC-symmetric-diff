@@ -10,15 +10,51 @@
 <main>
 	<article>
 		<h1>Algorithms: Find the Symmetric Difference</h1>
-		<h2>A FreeCodeCamp Coding Interview Prep Question</h2>
-			<p>Create a function that takes two or more arrays and returns an array of the symmetric difference (△ or ⊕) of the provided arrays.</p>
-			<h3>Process of thinking:</h3>
-			<ol>
-				<li>Find out how to allow unlimited arguments in a function using normal and arrow functions.</li>
-				<p>One can use rest parameters in an arrow function or the arguments object if instantiating a normal function.</p>
-				<li>Use Array.isArray() to determine if each argument is an array by testing each argument and saving only the arrays into a new variable without mutating the original array.</li>
-				<li></li>
-			</ol>
+		<form>
+			<fieldset>
+				<legend>Choose one:</legend>
+				<label>Number</label>
+				<input type="radio"></input>
+				<label>Boolean</label>
+				<input type="radio"></input>
+				<label>String</label>
+				<input type="radio"></input>
+			</fieldset>
+			<fieldset>
+				<legend>Choose a list:</legend>
+				<input type="radio"></input>
+				<label>List 1</label>
+				<input type="radio"></input>
+				<label>List 2</label>
+				<input type="radio"></input>
+				<button>Add a list</button>
+			</fieldset>
+			<fieldset>
+				<legend>Lists:</legend>
+				<div>
+					<strong>List 1</strong>
+					<ul>
+						<li>1</li>
+						<li>"save"</li>
+						<li>3</li>
+						<li>"word"</li>
+						<li>2</li>
+					</ul>
+				</div>
+				<div>
+					<strong>List 2</strong>
+					<ul>
+						<li>"good"</li>
+						<li>1</li>
+						<li>false</li>
+						<li>4</li>
+						<li>3</li>
+						<li>"save"</li>
+					</ul>
+				</div>
+			</fieldset>
+			<button>Find the Difference</button>
+		</form>
 	</article>
 	<div id="app"></div>
 </main>
