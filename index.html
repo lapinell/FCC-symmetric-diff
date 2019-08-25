@@ -13,54 +13,67 @@
 		<form>
 			<fieldset>
 				<legend>Choose one:</legend>
+				<input type="radio" name="item" value="number"></input>
 				<label>Number</label>
-				<input type="radio"></input>
+				<input type="radio" name="item" value="boolean"></input>
 				<label>Boolean</label>
-				<input type="radio"></input>
+				<input type="radio" name="item" value="string"></input>
 				<label>String</label>
-				<input type="radio"></input>
-			</fieldset>
-			<fieldset>
-				<legend>Enter a Number/Boolean/String:</legend>
-				<label></label>
-				<input type="text" placeholder="Enter a Number"></input>
-				<input type="text" placeholder="Enter a Word"></input>
-				<input type="radio"></input>
+				<br>
+				<input type="text" placeholder="Enter a number"></input>
+				<input type="text" placeholder="Enter a word"></input>
+				<input type="radio" name="boolean" value="true"></input>
 				<label>True</label>
-				<input type="radio"></input>
+				<input type="radio" name="boolean" value="false"></input>
 				<label>False</label>
 			</fieldset>
 			<fieldset>
 				<legend>Choose a list:</legend>
-				<input type="radio"></input>
+				<input type="radio" name="list" value="list-1"></input>
 				<label>List 1</label>
-				<input type="radio"></input>
+				<input type="radio" name="list" value="list-2"></input>
 				<label>List 2</label>
-				<input type="radio"></input>
+				<input type="radio" name="list" value="list-3"></input>
+				<label>List 3</label>
 				<button>Add a list</button>
 			</fieldset>
 			<button>Add to List</button>
 			<fieldset>
 				<legend>Preview</legend>
 				<div>
-					<strong>List 1</strong>
+					<strong>List 1<button>Remove</button></strong>
 					<ul>
-						<li>1</li>
-						<li>"save"</li>
-						<li>3</li>
-						<li>"word"</li>
-						<li>2</li>
+						<li>1<button>Remove</button></li>
+						<li>"save"<button>Remove</button></li>
+						<li>3<button>Remove</button></li>
+						<li>"word"<button>Remove</button></li>
+						<li>2<button>Remove</button></li>
 					</ul>
 				</div>
 				<div>
-					<strong>List 2</strong>
+					<strong>List 2<button>Remove</button></strong>
 					<ul>
-						<li>"good"</li>
-						<li>1</li>
-						<li>false</li>
-						<li>4</li>
-						<li>3</li>
-						<li>"save"</li>
+						<li>"good"<button>Remove</button></li>
+						<li>1<button>Remove</button></li>
+						<li>false<button>Remove</button></li>
+						<li>4<button>Remove</button></li>
+						<li>3<button>Remove</button><button>Remove</button></li>
+						<li>"save"<button>Remove</button></li>
+					</ul>
+				</div>
+				<div>
+					<strong>List 3<button>Remove</button></strong>
+					<ul>
+						<li>5 <button>Remove</button></li>
+						<li>1 <button>Remove</button></li>
+						<li>false<button>Remove</button></li>
+						<li>2<button>Remove</button></li>
+						<li>3<button>Remove</button></li>
+						<li>"save"<button>Remove</button></li>
+						<li>6<button>Remove</button></li>
+						<li>7<button>Remove</button></li>
+						<li>8<button>Remove</button></li>
+						<li>true<button>Remove</button></li>
 					</ul>
 				</div>
 			</fieldset>
@@ -74,6 +87,10 @@
 			<li>"word"</li>
 			<li>4</li>
 			<li>"good"</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>true</li>
 		</ul>
 	</div>
 </main>
