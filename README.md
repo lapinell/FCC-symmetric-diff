@@ -12,7 +12,13 @@ How I would break down the tasks:
 
 - Allow only one choice at a time
 - Add to List
+  - Allow a maximum of 10 items per list
+  - Show a new input for the chosen type
+    - Number: text input
+    - boolean: radio input
+    - string: text input
 - Remove from list
+  - Remove button in preview beside each item
 
 1. Show a preview of each list before submitting them.
 
@@ -23,19 +29,22 @@ How I would break down the tasks:
 
 1. Allow them to add more than 2 lists if wanted.
 
+- At least two lists are required
+- At most 12 lists can be made
 - Add a list
   - Adds a list choice in Lists
   - Adds the list to preview
+  - Add list button disappears when there are 12 lists showing.
 - Remove a list
+  - Remove button in preview beside each list title
+    - Adjust List titles after removing a list from the beginning
   - Removes the list choice in lists
-  - Removes the list in preivew
-- At least two lists are required
-  - An error shows when the user attempts to remove the second list
-- At most 12 lists can be made
-  - An error shows when the user attempts to add more than 12 lists
+  - Removes the list in preview
+  - Remove list button disappears when there are fewer than 3 lists
 
 1. Find the symmetric difference between all lists used.
 
 - "Find the difference" button
-- Show the result below the button
-  - Show an error if only 1 list has items.
+  - Disable the Find a Diff button if only 1 list is populated
+  - Tool tip while button is disabled directs user to fill the second list before submitting
+- Show the resulting list below the button

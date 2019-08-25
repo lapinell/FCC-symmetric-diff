@@ -1,8 +1,8 @@
 import "./styles.css";
 
-document.getElementById("app").innerHTML = `
+// document.getElementById("app").innerHTML = `
 
-`;
+// `;
 
 function diffArrays() {
   console.log("diffArrays is:", arguments);
