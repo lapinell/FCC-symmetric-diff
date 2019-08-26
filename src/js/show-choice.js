@@ -1,5 +1,4 @@
 // user selects a option from the radio
-// show that option's input
 
 const choice = document.getElementsByName("item");
 let itemValue;
@@ -14,3 +13,9 @@ choice.forEach(function(element) {
 });
 
 console.log({ itemValue });
+
+// show that option's input
+const showChoice = document.getElementsByName(itemValue)[0];
+console.log("showChoice:", showChoice);
+
+showChoice.setAttribute("style", "display:block");
