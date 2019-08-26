@@ -28,6 +28,7 @@ const booleanCh = new Choice(
 const choiceList = [numberCh, stringCh, booleanCh];
 
 const choices = document.getElementsByName("item");
+console.log({ choices });
 
 choices.forEach(element => {
   element.onchange = event => {
