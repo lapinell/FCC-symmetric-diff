@@ -1,0 +1,13 @@
+body {
+  font-size: 1rem;
+}
+
+fieldset {
+  margin: 16px 0;
+  padding: 16px;
+}
+
+/* div#choices input,
+div#choices label {
+  display: none;
+} */
